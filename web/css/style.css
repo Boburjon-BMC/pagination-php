@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+   --color_bg: #0C9AAC;
+   --color_title:#747474;
+   --color_link: #086673;
+   --color_wrap:#282936;
+   --fontF_Figtree: 'Figtree', sans-serif;
+}
+
 *{
    padding: 0;
    margin: 0;
@@ -10,4 +19,187 @@ ul{
 }
 a{
    text-decoration: none;
+}
+.container{
+   width: 1100px !important;
+}
+
+.text_table{
+   font-family: var(--fontF_Figtree);
+   font-weight: 800;
+   font-size: 22px;
+}
+.search_input{
+   width: 280px;
+   padding-left: 30px;
+   font-size: 16px;
+   text-transform: capitalize;
+   border: 2px solid #757575;
+   border-radius: 8px;
+   background-color: #FFFFFF;
+}
+.search_input::placeholder{
+   color: #757575;
+}
+.input_title{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   position: relative;
+}
+.ichon_search{
+   position: absolute;
+   left: 18px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 22px;
+   height: 22px;
+}
+.button_add{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+#add-bitton, #delete-bitton{
+   background-color: var(--color_bg);
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 5px;
+   padding: 5px 12px;
+   border: 2px solid transparent;
+   color: #fff;
+   font-family: var(--fontF_Figtree);
+   font-weight: 500;
+   transition: .3s;
+}
+.add_a{
+   text-decoration: none !important;
+   color: #fff ;
+}
+#delete-bitton{
+   background-color: rgb(189, 28, 28);
+}
+#add-bitton:active{
+   box-shadow:  0 0 10px  var(--color_bg), 0 0 20px var(--color_bg);
+   transform: scale(1.01);
+}
+#delete-bitton:active{
+   box-shadow:  0 0 10px  rgb(189, 28, 28), 0 0 20px rgb(189, 28, 28);
+   transform: scale(1.01);
+}
+#add-bitton img, #delete-bitton i{
+   width: 25px;   
+   color: #fff;
+}
+tbody tr td .icon{
+   width: 47px;
+   height: 47px;
+   margin-left: 20px;
+}  
+tbody tr td input{
+   font-size: 20px;
+   cursor: pointer;
+   border: 2px solid #757575 !important;
+   margin-left: 10px;
+}
+tbody tr .wrap{
+   display: flex;
+   display: flex;
+   align-items: center;
+}
+tbody tr .wrap p{
+   margin: 0;
+   margin-left: 10px;
+}
+
+tbody tr .wrap p:nth-child(2){
+   font-size: 14px;
+   font-family: var(--fontF_Figtree);
+   font-weight: 400;
+}
+tbody tr .wrap1 img{
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+tbody tr .wrap1{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+tbody tr .wrap1 .row4_title{
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+   justify-content: center;
+   height: 50px;
+}
+tbody tr .wrap1 .row4_title p:nth-child(2){
+   font-size: 18px;
+   font-family: var(--fontF_Figtree);
+   font-weight: 400;
+}
+tbody tr .wrap1 .set_icon{
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+tbody tr .link{
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.table_content{
+   border: 3px solid var(--color_bg) !important;
+   border-radius: 10px;
+   overflow: hidden;
+   min-height: 500px;
+}
+table thead th{
+   background-color: #F5F5F5 !important;
+   color: #747474 !important;
+   font-size: 14px !important;
+   font-weight: 500;
+}
+.item{
+   border: 1px solid red;
+   
+}
+.cantrol_wrap{
+   padding-right: 0;
+}
+.cantrol_wrap .pagination{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.length{
+   font-size: 15px;
+   color: var(--color_title);
+}
+.selaect{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   column-gap: 10px;
+}
+.selaect span{
+   font-size: 17px;
+   font-family: var(--fontF_Figtree);
+   font-weight: 500;
+   color: var(--color_title);
+   text-transform: capitalize;
+}
+.selaect select{
+   background-color: transparent;
+   color: var(--color_bg);
+   font-size: 18px;
+   padding: 5px 25px;
+   border: none !important;
+   outline: none;
+   line-height: 30px;
 }
