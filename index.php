@@ -21,7 +21,7 @@
                   <img src="web/icon/search.png" class="ichon_search" alt="">
                </div>
                <div class="col-sm-6 button_add ">
-                  <button type="button" class="btn btn-primary" id="delete-bitton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <button type="button" class="btn btn-primary delete_item" id="delete-bitton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                      <i class="fa-solid fa-trash"></i>
                      <span>Delete</span>            
                   </button>
@@ -45,6 +45,37 @@
                  </tr>
                </thead>
                <tbody class="table-group-divider">
+                  <tr class="item">
+                     <td>
+                        <div class="wrap">
+                           <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                           <img src="web/icon/icon.png" class="icon" alt="">
+                           <div class="text">
+                              <p>This is text in a cell</p>
+                              <p>Here is some more additional text</p>
+                           </div>
+                        </div>
+                     </td>  
+                     <td>
+                        <div class="link">
+                           <a href="#">This is a link</a>  
+                        </div>
+                     <td>
+                        <div class="link">
+                           <p class="m-0">Mar 23, 2022</p>
+                        </div>
+                     </td>  
+                     <td>
+                        <div class="wrap1">
+                           <div class="row4_title">
+                              <img src="img/img.jpg" alt="">
+                              <p class=" m-0">Name Here</p>
+                           </div>
+                           <img src="web/icon/setting.png" class="set_icon" alt="">
+                  
+                        </div>
+                     </td>  
+                  </tr>
                   <tr class="item">
                      <td>
                         <div class="wrap">
@@ -132,6 +163,6 @@
    </div>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-   <script src="web/js/script.js"></script>
+   <script src="web/js/script.js"></script>  
 </body>
 </html>
