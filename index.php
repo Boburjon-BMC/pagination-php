@@ -21,7 +21,7 @@
                   <img src="web/icon/search.png" class="ichon_search" alt="">
                </div>
                <div class="col-sm-6 button_add ">
-                  <button type="button" class="btn btn-primary delete_item" id="delete-bitton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <button type="button"  class="disabled btn btn-primary delete_item" id="delete-bitton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                      <i class="fa-solid fa-trash"></i>
                      <span>Delete</span>            
                   </button>
@@ -45,7 +45,7 @@
                  </tr>
                </thead>
                <tbody class="table-group-divider">
-                  <tr class="item">
+                  <tr class="item  position-relative">
                      <td>
                         <div class="wrap">
                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
@@ -75,41 +75,7 @@
                   
                         </div>
                      </td>  
-                  </tr>
-                  <tr class="item">
-                     <td>
-                        <div class="wrap">
-                           <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                           <img src="web/icon/icon.png" class="icon" alt="">
-                           <div class="text">
-                              <p>This is text in a cell</p>
-                              <p>Here is some more additional text</p>
-                           </div>
-                        </div>
-                     </td>  
-                     <td>
-                        <div class="link">
-                           <a href="#">This is a link</a>  
-                        </div>
-                     <td>
-                        <div class="link">
-                           <p class="m-0">Mar 23, 2022</p>
-                        </div>
-                     </td>  
-                     <td>
-                        <div class="wrap1">
-                           <div class="row4_title">
-                              <img src="img/img.jpg" alt="">
-                              <p class=" m-0">Name Here</p>
-                           </div>
-                           <img src="web/icon/setting.png" class="set_icon" alt="">
-                  
-                        </div>
-                     </td>  
-                  </tr>
-                  
-                  
-                                 
+                  </tr>   
                </tbody>
             </table>
          </div>
@@ -142,21 +108,21 @@
          </div>
       </div>
    </section>
-
 <!-- Modal button-->
    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
      <div class="modal-dialog">
        <div class="modal-content">
          <div class="modal-header">
-           <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+           <h1 class="modal-title fs-5" id="staticBackdropLabel">Tasdiqlash oynasi</h1>
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
-           ...
+           <span class="item_namber"></span>
+           <span> ta elementni o'chirmoqchimisiz</span>
          </div>
          <div class="modal-footer">
-           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-           <button type="button" class="btn btn-primary">Understood</button>
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">yo'q</button>
+           <button type="button" class="btn btn-primary">ha</button>
          </div>
        </div>
      </div>
